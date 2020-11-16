@@ -7,10 +7,8 @@ function pairwise(arr, arg) {
     if (usedIndex.indexOf(i)>-1) {
       continue;
     }
-    for (let j=1;j<arr.length;j++) {
-      if (i==j) {
-        continue;
-      }
+    for (let j=i+1;j<arr.length;j++) {
+
       if (usedIndex.indexOf(j)>-1) {
         continue;
       }      
